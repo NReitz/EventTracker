@@ -1,0 +1,29 @@
+ <ng-container *ngFor="let c of charts" ng-if="c">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <i class="fa fa-{{c.icon}} fa-fw"></i> {{c.title}}
+            <div class="pull-right">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                        Actions
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" role="menu">
+                        <li><a href="#">Overview</a>
+                        </li>
+                        <li><a href="#">By Source</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#">Standard Package</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <div id="{{c?.chart}}"></div>
+        </div>
+        <!-- /.panel-body -->
+    </div>
+ </ng-container>

@@ -1,0 +1,7 @@
+<ng-container *ngFor="let n of notifications">
+    <a href="#" class="list-group-item">
+        <i class="fa fa-{{n.icon}} fa-fw"></i> {{n.title}}
+        <span class="pull-right text-muted small"><em>{{n.time}}</em>
+        </span>
+    </a>
+</ng-container>

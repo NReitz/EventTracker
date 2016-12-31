@@ -1,0 +1,22 @@
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+    <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+</a>
+<ul class="dropdown-menu dropdown-alerts">
+    <ng-container *ngFor="let alert of alerts">
+        <li>
+            <a href="#">
+                <div>
+                    <i class="fa fa-{{alert.type}} fa-fw"></i> {{alert.name}}
+                    <span class="pull-right text-muted small">{{alert.time}}</span>
+                </div>
+            </a>
+        </li>
+        <li class="divider"></li>
+    </ng-container>
+    <li>
+        <a class="text-center" href="#">
+            <strong>See All Alerts</strong>
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </li>
+</ul>
