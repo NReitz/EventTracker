@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { ContributorComponent } from './contributor.component';
+import { ChartComponent } from '../dashboard/charts/chart.component';
 
 @NgModule({
   declarations: [

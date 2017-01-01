@@ -1,166 +1,92 @@
-<div class="container">
-	<div class="row">
-		<section class="content">
-			<div class="col-md-8 col-md-offset-2">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<div class="pull-right">
-							<div class="btn-group">
-								<button type="button" class="btn btn-success btn-filter" data-target="pagado">Pagado</button>
-								<button type="button" class="btn btn-warning btn-filter" data-target="pendiente">Pendiente</button>
-								<button type="button" class="btn btn-danger btn-filter" data-target="cancelado">Cancelado</button>
-								<button type="button" class="btn btn-default btn-filter" data-target="all">Todos</button>
-							</div>
-						</div>
-						<div class="table-container">
-							<table class="table table-filter">
-								<tbody>
-									<tr data-status="pagado">
-										<td>
-											<div class="ckbox">
-												<input type="checkbox" id="checkbox1">
-												<label for="checkbox1"></label>
-											</div>
-										</td>
-										<td>
-											<a href="javascript:;" class="star">
-												<i class="glyphicon glyphicon-star"></i>
-											</a>
-										</td>
-										<td>
-											<div class="media">
-												<a href="#" class="pull-left">
-													<img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
-												</a>
-												<div class="media-body">
-													<span class="media-meta pull-right">Febrero 13, 2016</span>
-													<h4 class="title">
-														Lorem Impsum
-														<span class="pull-right pagado">(Pagado)</span>
-													</h4>
-													<p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr data-status="pendiente">
-										<td>
-											<div class="ckbox">
-												<input type="checkbox" id="checkbox3">
-												<label for="checkbox3"></label>
-											</div>
-										</td>
-										<td>
-											<a href="javascript:;" class="star">
-												<i class="glyphicon glyphicon-star"></i>
-											</a>
-										</td>
-										<td>
-											<div class="media">
-												<a href="#" class="pull-left">
-													<img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
-												</a>
-												<div class="media-body">
-													<span class="media-meta pull-right">Febrero 13, 2016</span>
-													<h4 class="title">
-														Lorem Impsum
-														<span class="pull-right pendiente">(Pendiente)</span>
-													</h4>
-													<p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr data-status="cancelado">
-										<td>
-											<div class="ckbox">
-												<input type="checkbox" id="checkbox2">
-												<label for="checkbox2"></label>
-											</div>
-										</td>
-										<td>
-											<a href="javascript:;" class="star">
-												<i class="glyphicon glyphicon-star"></i>
-											</a>
-										</td>
-										<td>
-											<div class="media">
-												<a href="#" class="pull-left">
-													<img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
-												</a>
-												<div class="media-body">
-													<span class="media-meta pull-right">Febrero 13, 2016</span>
-													<h4 class="title">
-														Lorem Impsum
-														<span class="pull-right cancelado">(Cancelado)</span>
-													</h4>
-													<p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr data-status="pagado" class="selected">
-										<td>
-											<div class="ckbox">
-												<input type="checkbox" id="checkbox4" checked>
-												<label for="checkbox4"></label>
-											</div>
-										</td>
-										<td>
-											<a href="javascript:;" class="star star-checked">
-												<i class="glyphicon glyphicon-star"></i>
-											</a>
-										</td>
-										<td>
-											<div class="media">
-												<a href="#" class="pull-left">
-													<img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
-												</a>
-												<div class="media-body">
-													<span class="media-meta pull-right">Febrero 13, 2016</span>
-													<h4 class="title">
-														Lorem Impsum
-														<span class="pull-right pagado">(Pagado)</span>
-													</h4>
-													<p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr data-status="pendiente">
-										<td>
-											<div class="ckbox">
-												<input type="checkbox" id="checkbox5">
-												<label for="checkbox5"></label>
-											</div>
-										</td>
-										<td>
-											<a href="javascript:;" class="star">
-												<i class="glyphicon glyphicon-star"></i>
-											</a>
-										</td>
-										<td>
-											<div class="media">
-												<a href="#" class="pull-left">
-													<img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
-												</a>
-												<div class="media-body">
-													<span class="media-meta pull-right">Febrero 13, 2016</span>
-													<h4 class="title">
-														Lorem Impsum
-														<span class="pull-right pendiente">(Pendiente)</span>
-													</h4>
-													<p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
-												</div>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+<div id="content-wrapper" class="content-wrapper view members-view">
+    <div class="container-fluid">
+        <div class="projects-heading">
+            <div class="actions">
+                <button class="btn btn-success" data-toggle="modal" data-target="#modal-new-member"><i class="fa fa-plus"></i> New Member</button>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="module-wrapper col-md-12 col-sm-12 col-xs-12">
+                <section class="module members-module module-no-heading">
+                    <div class="module-inner">
+                        <div class="module-content">
+                            <div class="module-content-inner no-padding-bottom">
+                                <div class="members-list">
+
+                                    <ng-container *ngFor="let c of contributors">
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="contact col-md-2 col-sm-2 col-xs-12">
+                                                    <ul class="list-inline">
+                                                        <li class="chat"><a href="#"><span class="fa fa-pencil fa-2x"></span></a></li>
+                                                        <li class="location"><a href="#"><span class="fa fa-trash fa-2x"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="profile col-md-7 col-sm-7 col-xs-12">
+                                                    <ul class="info list-unstyled">
+                                                        <li class="name"><a href="#">{{c.name}}</a></li>
+                                                        <li class="role">{{c.title}}</li>
+                                                        <li class="team">{{c.email}}</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="data col-md-3 col-sm-3 col-xs-12">
+                                                    <ul class="list-inline text-center">
+                                                        <li class="banquets"><span class="figure">{{c.banquets}}</span><span>Banquets</span></li>
+                                                        <li class="raffles"><span class="figure">{{c.raffles}}</span><span>Raffles</span></li>
+                                                        <li class="donations"><span class="figure">{{c.donations}}</span><span>Donations</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-container>
+
+                                    <nav class="text-center pagination-wrapper">
+                                        <p class="pagination-info">Displaying members 1-10 of 356</p>
+                                        <ul class="pagination pagination-sm">
+                                            <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="content-wrapper" class="content-wrapper view members-view">
+    <!-- Modal (New Member) -->
+    <div class="modal" id="modal-new-member" tabindex="-1" role="dialog" aria-labelledby="modal-new-member">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-new-ticket-label">Add New Member</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="sr-only">Name</label>
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only">Email</label>
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <button type="button" class="btn btn-success margin-top-md center-block" data-dismiss="modal">Add Member</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//modal-->
 </div>

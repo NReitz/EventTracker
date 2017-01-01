@@ -1,0 +1,167 @@
+@import "base/mixins.less";
+@import "base/theme-default.less";
+/* ======= Members page ========= */
+.members-view {
+	.projects-heading {
+		position: relative;
+		.actions {
+			position: absolute;
+			right: 0;
+			top: -6px;
+		}
+
+	}
+}
+.members-module {
+	.members-list {
+
+		.item {
+			padding: 15px;
+			border-bottom: 1px solid @divider;
+			&:hover {
+				background: @smoky-white;
+			}
+
+			.profile {
+				position: relative;
+				padding-left: 90px;
+
+			}
+			.profile-img {
+				position: absolute;
+				left: 15px;
+				img {
+					width: 60px;
+					height: 60px;
+				}
+
+			}
+			.info {
+				color: lighten(@text-color-secondary, 10%);
+				a {
+					color: lighten(@text-color-secondary, 10%);
+					&:hover {
+						color: @text-color;
+					}
+				}
+				.name {
+					font-weight: 500;
+					font-size: 16px;
+					a {
+						color: @text-color;
+					}
+				}
+
+			}
+			.contact {
+				text-align: center;
+				ul {
+					display: inline-block;
+					margin: 0 auto;
+					padding-top: 10px;
+				}
+				.pe-icon {
+					font-size: 18px;
+					font-weight: bold;
+					display: inline-block;
+					width: 36px;
+					height: 36px;
+					color: #fff;
+					text-align: center;
+					background: @color-blue;
+					.border-radius(50%);
+					padding-top: 9px;
+
+				}
+				.chat {
+					.pe-icon {
+						background: lighten(@color-green, 5%);
+						&:hover {
+        					background: darken(@color-green, 5%);
+    					}
+					}
+					
+				}
+				.call {
+					.pe-icon {
+						background: lighten(@color-orange, 5%);
+						&:hover {
+        					background: darken(@color-orange, 5%);
+    					}
+					}
+					
+				}
+				.location {
+					.pe-icon {
+						background: lighten(@color-pink, 5%);
+						&:hover {
+        					background: darken(@color-pink, 5%);
+    					}
+					}
+					
+				}
+
+
+			}
+			.data {
+				color: @grey;
+				ul {
+					margin-bottom: 0;
+				}
+				li {
+					padding: 0 10px;
+				}
+				span {
+					font-size: 12px;
+
+					display: block;
+					&.figure {
+						font-size: 36px;
+						font-weight: 300;
+					}
+				}
+				.projects {
+					color: @color-green;
+				}
+				.discussions {
+					color: @color-orange;
+				}
+				.commits {
+					color: @text-color-secondary;
+				}
+			}
+		}
+	}
+	.pagination-wrapper {
+		margin-top: 20px;
+	}
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) { 
+    .members-module .members-list .item .contact {
+        margin-bottom: 15px;
+    }
+    .members-module .members-list .item .data span.figure {
+        font-size: 24px;
+    }
+    .members-module .members-list .item .data li {
+        padding: 5px;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
